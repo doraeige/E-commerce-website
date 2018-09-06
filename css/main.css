@@ -1,0 +1,279 @@
+/* 公用 */
+.common_width {
+  width: 1000px; 
+  margin: 0 auto;
+}
+
+.left-area {
+  float: left;
+}
+
+.right-area {
+  float: right;
+  margin-right: 21px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* topBar */
+.top-bar {
+  height: 32px;
+  background-color: #f7f7f7;
+  line-height: 32px;
+}
+
+.collection {
+  background: url(../images/icon/collection.jpg) left center no-repeat;
+  padding-left: 19px;
+  font-weight: bold;
+}
+
+.top-bar a:hover {
+  color: red;
+}
+
+/* logo-bar */
+.logo-bar {
+  height: 85px;
+  background-color: #1d7ad9;
+}
+
+.logo {
+  padding-left: 41px;
+  padding-top: 12px;
+}
+
+/* search */
+
+.search_box {
+  width: 430px;
+  padding-top: 23px;
+  padding-left: 185px;
+}
+
+.search_text {
+  width: 350px;
+  height: 35px;
+  padding: 0 5px;
+  background-color: #fff;
+  /* 所有IE浏览器 input垂直居中问题*/
+  line-height: 35px\9;
+}
+
+.search_btn {
+  width: 70px;
+  height: 35px;
+  font-size: 14px;
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+/* 购物车 */
+.shop_car {
+  width: 145px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff8800;
+  margin-top: 23px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 60px;
+}
+
+.shop_text {
+  width: 87px;
+  height: 35px;
+  background: url(../images/icon/shop_car.png) 10px center no-repeat;
+  text-indent: 40px;
+  border-right: 1px solid #e27a00;
+}
+
+/* 总width:56 padding-right:28 所以相减width是27*/
+/* text-align: right 向右对齐，向左增加数字等 */
+.shop_num { 
+  width: 27px;
+  height: 35px;
+  border-left: 1px solid #ff9c01;
+  background: url(../images/icon/three.png) 33px center no-repeat;
+  text-align: right;
+  padding-right: 28px;
+}
+
+/* 导航 */
+.nav_box {
+  height: 35px;
+  background-color: #1369c0;
+  color: #fff;
+}
+
+.shop_class {
+  width: 190px;
+  position: relative;
+}
+
+.shop_class h3 {
+  text-align: center;
+  line-height: 35px;
+}
+
+.shop_class i {
+  background: url(../images/icon/down.png) left center no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  margin-left: 11px;
+}
+
+.nav {
+  line-height: 35px;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav a {
+  height: 35px;
+  display: inline-block;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.nav .acitive {
+  background-color: #4593fd;
+}
+
+/* 商品弹出列表 */
+.shop_show {
+  width: 100%;
+  background-color: #4593fd;
+  position: absolute;
+  left: 0;
+  top: 35px;
+}
+
+.shop_item {
+  padding: 14px 10px;
+  border-top: 1px solid #5aa1fe;
+  border-bottom: 1px solid #3487f2;
+}
+
+.shop_item dt {
+  height: 22px;
+  background: url(../images/icon/right.png) right center no-repeat;
+}
+
+.shop_item .b{
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.shop_item a{
+  color: #fff;
+}
+
+.shop_item a:hover {
+  text-decoration: underline;
+}
+
+.shop_item .link {
+  width: 48px;
+  height: 20px;
+  line-height: 20px;
+  background: url(../images/icon/link.png) left center no-repeat;
+  display: inline-block;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.shop_item .c {
+  text-decoration: none;
+}
+
+/* 左侧 shop_item_active 状态 */
+.shop_item_active {
+  background-color: #fff;
+  border-left: 1px solid #4593fd;
+}
+
+.shop_item_active dt {
+  background: none;
+}
+
+.shop_item_active a {
+  color: #000;
+}
+
+.shop_item_active .link {
+  color: #fff;
+}
+
+/* 弹出右侧列表 */
+.shop_list {
+  width: 568px;
+  /* height: 378px; */
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 190px;
+  top: 35px;
+}
+
+.shop_list_content {
+  padding: 0 20px;
+} 
+
+.shop_list_item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.shop_list_item dt{
+  color: #4b88da;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+}
+
+.shop_list_item dd {
+  padding-left: 68px;
+  margin-top: -24px; 
+  line-height: 24px;
+}
+
+.shop_list_item dd a {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.shop_list_item_link {
+  padding: 15px 0;
+}
+
+.shop_list_item_link a {
+  height: 26px;
+  line-height: 26px;
+  background-color: #2785e6;
+  padding: 0 12px 0 8px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.shop_list_item_link span {
+  width: 11px;
+  height: 7px;
+  margin-left: 8px;
+  background: url(../images/icon/right.png) left center no-repeat;
+  display: inline-block;
+}
+
+
