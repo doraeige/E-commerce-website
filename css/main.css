@@ -10,7 +10,6 @@
 
 .right-area {
   float: right;
-  margin-right: 21px;
 }
 
 .hide {
@@ -36,6 +35,10 @@
 
 .top-bar a:hover {
   color: red;
+}
+
+.right-area a:nth-child(2) {
+  margin-right: 21px;
 }
 
 /* logo-bar */
@@ -149,19 +152,22 @@
   background-color: #4593fd;
 }
 
-/* 商品弹出列表 */
+/* 导航左侧列表 */
+/* 让左右两侧高度一致 padding-bottom: 1px; */
 .shop_show {
   width: 100%;
   background-color: #4593fd;
   position: absolute;
   left: 0;
   top: 35px;
+  padding-bottom: 1px;
 }
 
 .shop_item {
   padding: 14px 10px;
   border-top: 1px solid #5aa1fe;
   border-bottom: 1px solid #3487f2;
+  line-height: 13px;
 }
 
 .shop_item dt {
@@ -170,7 +176,6 @@
 }
 
 .shop_item .b{
-  font-weight: bold;
   font-size: 14px;
   font-family: "Microsoft YaHei", "微软雅黑";
 }
@@ -216,7 +221,7 @@
   color: #fff;
 }
 
-/* 弹出右侧列表 */
+/* 导航右侧列表 */
 .shop_list {
   width: 568px;
   /* height: 378px; */
@@ -277,3 +282,226 @@
 }
 
 
+/* banner 部分 */
+/* 与下面商品列表banner截取公共部分 宽高各自设定*/
+.banner_bar {
+  float: right;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 上面banner宽高 */
+.banner_big,
+.banner_big img {
+  width: 811px;
+  height: 326px; 
+}
+
+.banner_big .img_box {
+  width: 1622px;
+  height: 326px;
+}
+
+/* 
+* 1622px 是两张图片的宽度和
+* left:-811px 是下一张图片
+*/
+.img_box {
+  /* width: 1622px;
+  height: 326px; */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.img_box li {
+  float: left;
+}
+
+.img_box img {
+  /* width: 811px;
+  height: 326px; */
+  display: block;
+}
+
+.img_num {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.img_num a {
+  width: 20px;
+  height: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.img_num .active {
+  background-color: #ff7700;
+}
+
+/* 商品列表标题 */
+.shop_title {
+  height: 45px;
+  line-height: 45px;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.icon {
+  width: 44px;
+  height: 45px;
+  background: url(../images/icon/shop_icon.png) left top no-repeat;
+  float: left;
+  margin-right: 15px;
+}
+
+.shop_title h3 {
+  font-size: 24px;
+  float: left;
+  font-weight: normal;
+}
+
+.more {
+  float: right;
+  font-family: "宋体";
+}
+
+.more:hover {
+  text-decoration: underline;
+}
+
+/* 商品列表内容 */
+.shop_item_list .left-area{
+  width: 190px;
+}
+
+.shop_item_list .right-area {
+  width: 808px;
+  height: 396px;
+  border: 1px solid #e5e5e5;
+  border-bottom: 3px solid #ff7201;
+  overflow: hidden;
+}
+
+/* 商品列表banner宽高 */
+.banner_sm,
+.banner_sm img {
+  width: 190px;
+  height: 400px;
+}
+
+.banner_sm .img_box {
+  width: 380px;
+  height: 400px;
+}
+
+/* 商品列表右侧 上部*/
+/* 总宽度808px 分给4个item 平均202.5px */
+/* 宽度不够，超出部分，父元素隐藏 */
+.item_top,
+.item_bottom {
+  margin-right: -4px;
+}
+
+.item {
+  width: 202px;
+  height: 280px;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  font-family: "Microsoft YaHei",
+  "微软雅黑";
+  float: left;
+}
+
+.item_img { 
+  padding-top: 46px;
+  padding-bottom: 25px;
+}
+
+.item h3 {
+  font-size: 16px;
+}
+
+.item p {
+  font-size: 14px;
+  color: #ff7f26;
+  line-height: 25px;
+}
+
+/* 商品列表右侧 下部*/
+.item_sm {
+  width: 203px;
+  border-right: 1px solid #e5e5e5;
+  height: 117px;
+  float: left;
+  box-sizing: border-box;
+}
+.item_sm_img {
+  width: 92px;
+  height: 95px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+  margin-left: 8px;
+}
+
+.item_sm_text .text_active {
+  color: #ff7300;
+}
+
+.item_sm_text {
+  width: 100px;
+  padding-top: 28px;
+  float: left;
+}
+
+.item_sm_text p:nth-child(1) {
+  line-height: 20px;
+}
+
+.item_sm_text p:nth-child(2) {
+  font-size: 16px;
+  font-family: "Microsoft YaHei",
+  "微软雅黑";
+  line-height: 30px;
+  color: #181818;
+}
+
+/* 底部 */
+footer {
+  background-color: #d4d4d4;
+  text-align: center;
+  line-height: 24px;
+  padding: 44px 0;
+  margin-top: 40px;
+}
+
+footer i {
+  font-style: normal;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a:hover {
+  color: #f60;
+}
+
+.web_logo {
+  padding-top: 30px;
+}
+
+.web_logo img {
+  margin: 0 12px;
+}
